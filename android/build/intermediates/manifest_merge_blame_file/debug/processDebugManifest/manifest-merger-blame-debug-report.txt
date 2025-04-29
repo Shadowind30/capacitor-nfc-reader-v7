@@ -1,0 +1,18 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.monaca.capacitor.nfcreader" >
+4
+5    <uses-sdk android:minSdkVersion="23" />
+6
+7    <uses-permission android:name="android.permission.NFC" />
+7-->/Volumes/Files/programming/ionfc/node_modules/@monaca/capacitor-nfc-reader/android/src/main/AndroidManifest.xml:2:3-60
+7-->/Volumes/Files/programming/ionfc/node_modules/@monaca/capacitor-nfc-reader/android/src/main/AndroidManifest.xml:2:20-57
+8
+9    <uses-feature
+9-->/Volumes/Files/programming/ionfc/node_modules/@monaca/capacitor-nfc-reader/android/src/main/AndroidManifest.xml:3:3-5:31
+10        android:name="android.hardware.nfc"
+10-->/Volumes/Files/programming/ionfc/node_modules/@monaca/capacitor-nfc-reader/android/src/main/AndroidManifest.xml:4:5-40
+11        android:required="true" />
+11-->/Volumes/Files/programming/ionfc/node_modules/@monaca/capacitor-nfc-reader/android/src/main/AndroidManifest.xml:5:5-28
+12
+13</manifest>

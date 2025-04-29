@@ -1,0 +1,205 @@
+{
+  "api": {
+    "name": "NFCReaderPlugin",
+    "slug": "nfcreaderplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "initialize",
+        "signature": "() => Promise<{ value: boolean; }>",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "initialize"
+      },
+      {
+        "name": "startScanning",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "startscanning"
+      },
+      {
+        "name": "stopScanning",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "stopscanning"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'nfcTagDetected', listenerFunc: (tag: NFCTag) => void) => Promise<PluginListenerHandle>",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'nfcTagDetected'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(tag: NFCTag) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "NFCTag"
+        ],
+        "slug": "addlistenernfctagdetected-"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'nfcError', listenerFunc: (error: NFCError) => void) => Promise<PluginListenerHandle>",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'nfcError'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(error: NFCError) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "NFCError"
+        ],
+        "slug": "addlistenernfcerror-"
+      },
+      {
+        "name": "removeAllListeners",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "removealllisteners"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "PluginListenerHandle",
+      "slug": "pluginlistenerhandle",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "remove",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "() => Promise<void>"
+        }
+      ]
+    },
+    {
+      "name": "NFCTag",
+      "slug": "nfctag",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "id",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "NFCTagType"
+          ],
+          "type": "NFCTagType"
+        }
+      ]
+    },
+    {
+      "name": "NFCError",
+      "slug": "nfcerror",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "code",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "NFCTagType",
+      "slug": "nfctagtype",
+      "members": [
+        {
+          "name": "MIFARE",
+          "value": "'MIFARE'",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "FeliCa",
+          "value": "'FeliCa'",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ISO15693",
+          "value": "'ISO15693'",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ISO7816",
+          "value": "'ISO7816'",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Unknown",
+          "value": "'Unknown'",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
